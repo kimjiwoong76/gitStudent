@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* check box */
+        
+        .chk_box input[type="checkbox"]{
+            display:none;
+        }
+        .chk_box input[type="checkbox"] + label{
+            position:relative;
+            display:block;
+            padding-left:25px;
+            box-sizing:border-box;
+        }
+        .chk_box input[type="checkbox"] + label:before{
+            content:"";
+            position:absolute;
+            top:0;
+            left:0;
+            width:20px;
+            height:20px;
+            background:;
+        }
+    </style>
+</head>
+<body>
+    <div class="chk_box">
+        <input type="checkbox" name="chk" id="chk1" class="chk_box"><label for="chk1"><span>체크박스</span></label>
+    </div>
+</body>
+</html>
