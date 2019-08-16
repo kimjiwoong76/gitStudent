@@ -1,0 +1,241 @@
+@charset "utf-8";
+/*-------------------------------------------------
+Style Sheet
+Version : 1.0
+Author :  김지웅
+Create date : 2019. . .
+-------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600');
+
+
+/* 공통 영역(신규 추가시 하단에 추가) */
+
+.container {
+	width: 100%;
+	max-width:1200px;
+	margin:0 auto;
+}
+
+.inner_inter{
+    margin-top:50px;
+}
+.in_inter{
+    margin-top:30px;
+}
+
+/* main-color & font-size */
+
+.core_color{
+    color:#000;
+}
+.core_bg{
+    background:#000;
+}
+big{
+    font-size:24px;
+}
+small{
+    font-size:14px;
+}
+
+/* table */
+
+table{
+    width:100%;
+}
+
+legend, caption{
+    display:block;
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    width:1px;
+    height:1px;
+    font-size:0;
+    line-height:0;
+    white-space: nowrap;
+}
+
+/* button & form & label */
+
+button
+
+form
+
+.chk_box input[type="checkbox"]{
+    display:none;
+}
+.chk_box input[type="checkbox"] + label{
+    position:relative;
+    display:block;
+    padding-left:25px;
+    box-sizing:border-box;
+}
+.chk_box input[type="checkbox"] + label:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:20px;
+    height:20px;
+    background:;
+}
+
+
+/* 공통 영역 end */
+
+/* haeder,section,footer 영역 */
+
+header,section,footer{
+	width:100%;
+	position:relative;
+    overflow:hidden;
+}
+
+
+/*m-menu*/
+.m-menu-bg{
+	background:rgba(0,0,0,0.6);
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:98;
+	display:none;
+	overflow:hidden;
+}
+			
+.m-menu {
+	width: 70%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: -100%;
+	display: none;
+    z-index: 99;
+	background:white;
+	border-left:1px solid #ddd;
+	box-sizing:border-box;
+}
+.m-menu img{
+/*	width:100%;*/
+	vertical-align:bottom;
+}
+.m-logo{
+	width:100%;
+	height:100px;
+	line-height:70px;
+	padding-left:10px;
+	box-sizing:border-box;
+	border-bottom:1px solid #333;
+}
+.m-logo > div{
+	width:60%;
+}
+.m-menu > ul > li > a:focus{
+	background: #01ace4;
+}
+.m-menu > ul> li > a{
+	padding: 20px 20px;
+	box-sizing: border-box;
+}
+.m-menu > ul> li a {
+	display: block;
+	color: #333;
+	border-bottom: 1px solid #ccc;
+}
+.m-menu > ul> li:hover > a {
+	background:  #01ace4;
+	color: #fff;
+}
+.m-menu > ul> li .sub-menu {
+	display: none;
+}
+.m-menu > ul> li .sub-menu li a {
+	padding: 10px 30px;
+	box-sizing: border-box;
+}
+.m-menu > ul> li .sub-menu li:hover a {
+	background: #999;
+	color: #fff;
+}
+.m-menu > ul> li .sub-menu li a {
+	color: #fff;
+}
+/*hamburger*/
+.hamburger.is-active {}
+.hamburger {position:relative; z-index:101;  transform: scale(0.8);display: none;position: absolute;top: 25px;right: 0px;padding: 10px 15px;}
+.hamburger .line{
+	width: 30px;
+	height: 3px;
+	background-color: #fff;
+	display: block;
+	margin: 7px auto;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	 transition: all 0.2s ease-in-out;
+}
+
+.hamburger:hover{cursor: pointer;}
+
+#hamburger-6.is-active{
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition-delay: 0.3s;
+	-o-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+	-webkit-transform: rotate(45deg) scale(0.8);
+	-ms-transform: rotate(45deg) scale(0.8);
+	-o-transform: rotate(45deg) scale(0.8);
+	transform: rotate(45deg) scale(0.8);
+}
+
+#hamburger-6.is-active .line:nth-child(2){
+	width: 0px;
+}
+
+#hamburger-6.is-active .line:nth-child(1),
+#hamburger-6.is-active .line:nth-child(3){
+	-webkit-transition-delay: 0.3s;
+	-o-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+	background-color:#333;
+}
+
+#hamburger-6.is-active .line:nth-child(1){
+	-webkit-transform: translateY(13px);
+	-ms-transform: translateY(13px);
+	-o-transform: translateY(13px);
+	transform: translateY(13px);
+}
+
+#hamburger-6.is-active .line:nth-child(3){
+	-webkit-transform: translateY(-7px) rotate(90deg);
+	-ms-transform: translateY(-7px) rotate(90deg);
+	-o-transform: translateY(-7px) rotate(90deg);
+	transform: translateY(-7px) rotate(90deg);
+}
+
+
+/* header,section,footer end */
+
+
+/* media */
+@media (max-width:1200px){
+    .row{padding:0 15px; box-sizing:border-box;}
+}
+@media (max-width:1024px){
+	
+}
+@media (max-width:768px){
+
+}
+@media (max-width:650px){
+
+}
+@media (max-width:480px){
+	
+}
